@@ -5,6 +5,22 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Demo-AngularModules", "Demo-AngularModules\Demo-AngularModules.vbproj", "{C9E0F1B0-9D29-4D6A-AF11-657A6D1FD793}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{8D895A6E-23F0-450B-B49A-285545CA4B1E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{771CC6B4-68E1-4AF8-A0B5-6B7EF097E9F5}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\Demo-AngularModules-WAWS-dev.json = PublishScripts\Configurations\Demo-AngularModules-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F5F7F54C-4915-46C5-A088-996C5FCD1A1A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{771CC6B4-68E1-4AF8-A0B5-6B7EF097E9F5} = {8D895A6E-23F0-450B-B49A-285545CA4B1E}
 	EndGlobalSection
 EndGlobal
